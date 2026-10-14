@@ -43,7 +43,7 @@ flowchart LR
 | **Aruba** | Gestisce il dominio del progetto e la posta utilizzata per l’invio delle email. | Recapita conferme di registrazione e recupero password. Non ospita il database dei quiz. |
 | **Pannello Django `/admin/`** | Mostra iscritti e tentativi agli operatori autorizzati. | Consente la gestione quotidiana senza interrogare direttamente MySQL. |
 
-Il sito informativo ERNEST su GitHub Pages e questa applicazione sono componenti distinti. GitHub Pages pubblica pagine statiche; la community richiede un’applicazione in esecuzione e un database. Anche `community-preview/`, presente nel repository, è una dimostrazione grafica distinta dall’app Django in questa cartella.
+Il sito informativo ERNEST su WordPress INFN e questa applicazione sono componenti distinti. WordPress pubblica i contenuti del progetto; la community è invece un’applicazione Django in esecuzione con un database persistente. Questo repository contiene esclusivamente il codice della community.
 
 ## Quale pannello aprire
 
@@ -156,7 +156,7 @@ Cambiare un file su GitHub non modifica direttamente le tabelle MySQL. Per rende
 
 ## Come viene pubblicata una modifica
 
-L’installazione attuale usa la cartella `community-app/` del ramo `codex/community-cern-preview`. Il ramo della community è distinto dal sito statico principale.
+L’installazione usa la radice del ramo `main` di questo repository dedicato. Il codice della community è quindi separato dal sito informativo WordPress.
 
 1. Modificare i file e verificare il risultato, preferibilmente attraverso una revisione del codice.
 2. Salvare e pubblicare il commit sul ramo configurato per la community.
